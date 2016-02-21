@@ -23,7 +23,6 @@ public class HomeWork2Loops {
             if (integ.length > min)
                 min = integ[i];
         }
-
         return 1;
     }
 
@@ -38,8 +37,14 @@ public class HomeWork2Loops {
      */
     public static double max(double[] doubles) {
         double[] mass = {5.1, 4.33, 3.0, 6.0, 5.999};
-
-        return 1;
+        double min = 0;
+        for (int index = 0;index < mass.length; index++ ){
+            double k = mass.get(index);
+            if (k > min){
+                min = k;
+            }
+        }
+        return min;
     }
 
     /**
@@ -52,6 +57,13 @@ public class HomeWork2Loops {
      * @return среднее арифмитическое число из массива
      */
     public static short average(short[] shorts) {
+        short[] numbers = {1, 3, 8, 10, 25, 1};
+        double average = 0;
+        int sum = 0;
+        for (int index = 0;index < numbers.length; index++ ){
+            sum += numbers[index];
+            average = (sum / numbers.length);
+        }
         return 1;
     }
 
