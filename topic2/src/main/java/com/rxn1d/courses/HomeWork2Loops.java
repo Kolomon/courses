@@ -16,6 +16,14 @@ public class HomeWork2Loops {
      * @return минимальное число из массива
      */
     public static int min(int[] integers) {
+        int[] integ = {5, 4, 3, 4, 5};
+
+        int min = integ[0];
+        for (int i = 0; i < integ.length; i++) {
+            if (integ.length > min)
+                min = integ[i];
+        }
+
         return 1;
     }
 
@@ -29,6 +37,8 @@ public class HomeWork2Loops {
      * @return максимальное число из массива
      */
     public static double max(double[] doubles) {
+        double[] mass = {5.1, 4.33, 3.0, 6.0, 5.999};
+
         return 1;
     }
 
