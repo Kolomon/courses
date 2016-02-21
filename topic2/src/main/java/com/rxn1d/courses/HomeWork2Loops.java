@@ -56,16 +56,16 @@ public class HomeWork2Loops {
      * @param shorts заданный массив типа short[]
      * @return среднее арифмитическое число из массива
      */
-    public static short average(short[] shorts) {
+    public static void average(short[] shorts) {
         short[] numbers = {1, 3, 8, 10, 25, 1};
         double average = 0;
         int sum = 0;
-        for (int index = 0;index < numbers.length; index++ ){
+        for (int index = 0; index < numbers.length; index++) {
             sum += numbers[index];
             average = (sum / numbers.length);
         }
-        return 1;
     }
+
 
     /**
      * Метод должен перевернуть массив.
@@ -76,6 +76,12 @@ public class HomeWork2Loops {
      * @return перевернутый массив
      */
     public static char[] reverse(char[] chars) {
-        return new char[1];
-    }
-}
+        char[] input = {a, b, c, d, e, f};
+        char temp = 0;
+        for (int index = 0; i < input.length / 2; index++) {
+            temp = input[index];
+            input[index] = input[input.length - 1 - index];
+            input[input.length - 1 - index] = temp;
+        }
+    } // В чем тут ошибка??
+
