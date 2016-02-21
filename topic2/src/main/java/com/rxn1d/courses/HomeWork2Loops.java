@@ -23,7 +23,7 @@ public class HomeWork2Loops {
             if (integ.length > min)
                 min = integ[i];
         }
-        return 1;
+        return min;
     }
 
     /**
@@ -37,14 +37,14 @@ public class HomeWork2Loops {
      */
     public static double max(double[] doubles) {
         double[] mass = {5.1, 4.33, 3.0, 6.0, 5.999};
-        double min = 0;
+        double max = 0;
         for (int index = 0;index < mass.length; index++ ){
             double k = mass.get(index);
-            if (k > min){
-                min = k;
+            if (k > max){
+                max = k;
             }
         }
-        return min;
+        return max;
     }
 
     /**
@@ -56,7 +56,7 @@ public class HomeWork2Loops {
      * @param shorts заданный массив типа short[]
      * @return среднее арифмитическое число из массива
      */
-    public static void average(short[] shorts) {
+    public static double average(short[] shorts) {
         short[] numbers = {1, 3, 8, 10, 25, 1};
         double average = 0;
         int sum = 0;
@@ -64,6 +64,7 @@ public class HomeWork2Loops {
             sum += numbers[index];
             average = (sum / numbers.length);
         }
+        return average;
     }
 
 
@@ -75,7 +76,7 @@ public class HomeWork2Loops {
      * @param chars заданный массив типа char[]
      * @return перевернутый массив
      */
-    public static char[] reverse(char[] chars) {
+    public static char reverse(char[] chars) {
         char[] input = {a, b, c, d, e, f};
         char temp = 0;
         for (int index = 0; i < input.length / 2; index++) {
@@ -83,5 +84,7 @@ public class HomeWork2Loops {
             input[index] = input[input.length - 1 - index];
             input[input.length - 1 - index] = temp;
         }
-    } // В чем тут ошибка??
+        return  temp;
+    }
+}
 

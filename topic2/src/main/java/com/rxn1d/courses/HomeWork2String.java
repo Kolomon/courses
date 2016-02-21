@@ -1,5 +1,9 @@
 package com.rxn1d.courses;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 /**
  * Модифицируйте этот класс(файл)
  *
@@ -15,7 +19,10 @@ public class HomeWork2String {
      * @return количество четных числе в строке
      */
     public static int countEvenInString(String s) {
-        return 1;
+    String stroka = "1_4_8_11_22";
+        int num = Integer.valueOf(stroka);
+
+        return num;
     }
 
     /**
