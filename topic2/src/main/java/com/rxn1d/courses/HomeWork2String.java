@@ -21,10 +21,12 @@ public class HomeWork2String {
     public static int countEvenInString(String s) {
      String task = "1_4_8_11_22";
         String[] result_a = task.split("_");
-        int[] numbers = Integer.parseInt(task.split);
         int even = 0;
-        for(int index = 0; index < numbers.length; index++){
-            if (numbers[index]%2 == 0){
+        for (int j = 0; j < length.result_a; j++){
+            int[] numbers = Integer.parseInt(String.valueOf(result_a)); // Еще не доделал Разбираюсь как спарсить строку в инты
+        }
+        for(int index = 0; index < numbers.length; index++) {
+            if (numbers[index] % 2 == 0) {
                 even++;
             }
         }
