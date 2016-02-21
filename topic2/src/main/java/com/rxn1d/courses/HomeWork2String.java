@@ -19,10 +19,16 @@ public class HomeWork2String {
      * @return количество четных числе в строке
      */
     public static int countEvenInString(String s) {
-    String stroka = "1_4_8_11_22";
-        int num = Integer.valueOf(stroka);
-
-        return num;
+     String task = "1_4_8_11_22";
+        String[] result_a = task.split("_");
+        int[] numbers = Integer.parseInt(task.split);
+        int even = 0;
+        for(int index = 0; index < numbers.length; index++){
+            if (numbers[index]%2 == 0){
+                even++;
+            }
+        }
+        return even;
     }
 
     /**
