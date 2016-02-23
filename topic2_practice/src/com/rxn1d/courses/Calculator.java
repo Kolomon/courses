@@ -10,5 +10,7 @@ public class Calculator {
         // для того, чтобы читать данные из консоли спользуйте данную конструкцию
         String[] in = ConsoleReader.readFromConsole();
         System.out.println("---> EXIT Calculator application <---");
+
+
     }
 }
