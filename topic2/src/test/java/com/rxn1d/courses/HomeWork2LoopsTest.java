@@ -59,7 +59,7 @@ public class HomeWork2LoopsTest {
     public void testAverage() {
         int expected = averageArrayEntry.left;
         Short[] arguments = averageArrayEntry.right;
-        short result = HomeWork2Loops.average(ArrayUtils.toPrimitive(averageArrayEntry.right));
+        short result = (short) HomeWork2Loops.average(ArrayUtils.toPrimitive(averageArrayEntry.right));
         assertTrue(TestUtils.buildMessage("average", Arrays.toString(arguments), String.valueOf(result), String.valueOf(expected)),
                 expected == result);
     }

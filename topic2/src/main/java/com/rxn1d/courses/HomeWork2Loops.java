@@ -16,12 +16,11 @@ public class HomeWork2Loops {
      * @return минимальное число из массива
      */
     public static int min(int[] integers) {
-        int[] integ = {5, 4, 3, 4, 5};
 
-        int min = integ[0];
-        for (int i = 0; i < integ.length; i++) {
-            if (integ.length > min)
-                min = integ[i];
+        int min = integers[0];
+        for (int i = 0; i < integers.length; i++) {
+            if (integers[i] < min)
+                min = integers[i];
         }
         return min;
     }
@@ -36,12 +35,11 @@ public class HomeWork2Loops {
      * @return максимальное число из массива
      */
     public static double max(double[] doubles) {
-        double[] mass = {5.1, 4.33, 3.0, 6.0, 5.999};
+
         double max = 0;
-        for (int index = 0;index < mass.length; index++ ){
-            double k = mass.get(index);
-            if (k > max){
-                max = k;
+        for (int index = 0;index < doubles.length; index++ ){
+            if (doubles[index] > max){
+                max = doubles[index];
             }
         }
         return max;
@@ -57,12 +55,11 @@ public class HomeWork2Loops {
      * @return среднее арифмитическое число из массива
      */
     public static double average(short[] shorts) {
-        short[] numbers = {1, 3, 8, 10, 25, 1};
-        double average = 0;
-        int sum = 0;
-        for (int index = 0; index < numbers.length; index++) {
-            sum += numbers[index];
-            average = (sum / numbers.length);
+        short average = 0;
+        short sum = 0;
+        for (int index = 0; index < shorts.length; index++) {
+            sum += shorts[index];
+            average = (short) (sum / shorts.length);
         }
         return average;
     }
@@ -76,15 +73,14 @@ public class HomeWork2Loops {
      * @param chars заданный массив типа char[]
      * @return перевернутый массив
      */
-    public static char reverse(char[] chars) {
-        char[] input = {a, b, c, d, e, f};
-        char temp = 0;
-        for (int index = 0; i < input.length / 2; index++) {
-            temp = input[index];
-            input[index] = input[input.length - 1 - index];
-            input[input.length - 1 - index] = temp;
+    public static char[] reverse(char[] chars) {
+       // char[] input = {a, b, c, d, e, f}; //
+        char[] wine = new char[chars.length];
+
+        for (int index = 0; index < chars.length; index++) {
+            wine [index] = chars[chars.length-index];
         }
-        return  temp;
+        return wine;
     }
 }
 

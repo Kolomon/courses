@@ -19,18 +19,13 @@ public class HomeWork2String {
      * @return количество четных числе в строке
      */
     public static int countEvenInString(String s) {
-     String task = "1_4_8_11_22";
-        String[] result_a = task.split("_");
+        String task = "1_4_8_11_22";
+        String[] result = task.split("_");
         int even = 0;
-        for (int j = 0; j < length.result_a; j++){
-            int[] numbers = Integer.parseInt(String.valueOf(result_a)); // Еще не доделал Разбираюсь как спарсить строку в инты
+        for (int j = 0; j < result.length; j++) {
+            if ((Integer.parseInt(result[j]) % 2 == 0)) even++;  // Еще не доделал Разбираюсь как спарсить строку в инты
         }
-        for(int index = 0; index < numbers.length; index++) {
-            if (numbers[index] % 2 == 0) {
-                even++;
-            }
-        }
-        return even;
+       return even;
     }
 
     /**
@@ -46,4 +41,5 @@ public class HomeWork2String {
     public static String removeSymbolFromString(String symbol, String s) {
         return "";
     }
+
 }
