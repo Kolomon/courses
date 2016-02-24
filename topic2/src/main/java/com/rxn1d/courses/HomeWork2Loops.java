@@ -78,7 +78,7 @@ public class HomeWork2Loops {
         char[] wine = new char[chars.length];
 
         for (int index = 0; index < chars.length; index++) {
-            wine [index] = chars[chars.length-index];
+            wine [index] = chars[chars.length-1-index];  // Исправил. До этого выходил за границу на 1 элемент.
         }
         return wine;
     }

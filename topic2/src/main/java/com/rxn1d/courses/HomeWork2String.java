@@ -3,6 +3,7 @@ package com.rxn1d.courses;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 
 /**
  * Модифицируйте этот класс(файл)
@@ -19,11 +20,10 @@ public class HomeWork2String {
      * @return количество четных числе в строке
      */
     public static int countEvenInString(String s) {
-        String task = "1_4_8_11_22";
-        String[] result = task.split("_");
+        String[] result = s.split("_");
         int even = 0;
         for (int j = 0; j < result.length; j++) {
-            if ((Integer.parseInt(result[j]) % 2 == 0)) even++;  // Еще не доделал Разбираюсь как спарсить строку в инты
+            if ((Integer.parseInt(result[j]) % 2 == 0)) even++;
         }
        return even;
     }
@@ -36,10 +36,20 @@ public class HomeWork2String {
      *
      * @param symbol символ который необходимо удалить
      * @param s      исходная строка
+     *
      * @return результирующая строка
      */
     public static String removeSymbolFromString(String symbol, String s) {
-        return "";
-    }
+        String[] s1 = s.split("");
+        String done = "";
 
+        for (int i = 0; i < s.length(); i++){
+            if ( s1[i] != symbol) done += s1[i];
+            if ( s1[0] == symbol) done += s1[0];
+            if ( s1[s.length() - 1] == symbol) done += s1[s.length() - 1];
+            if ((s.length()/2)!=0 && ( s1[s.length() / 2 + 1 ] == symbol)) done += s1[s.length() / 2 + 1];
+        }
+        return done ;
+    }
 }
+
