@@ -10,10 +10,10 @@ public class Calculator {
         double numb1 = 0;
         double numb2 = 0;
         String[0] in = Double.parseDouble(ConsoleReader.readFromConsole());
-        String[0] in = double numb1;
+        String[0] in = numb1;
         String[1] in = o;
         String[2] in = Double.parseDouble(ConsoleReader.readFromConsole());
-        String[2] in = double numb2;
+        String[2] in = numb2;
 
 
         if (o.equals("+")) {
