@@ -10,4 +10,5 @@ import com.rxn1d.courses.model.CarParking;
  */
 public interface CarParkingSerializer {
     String serialize(CarParking carParking);
+
 }

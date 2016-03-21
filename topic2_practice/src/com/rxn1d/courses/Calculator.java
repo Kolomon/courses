@@ -36,17 +36,17 @@ public class Calculator {
         }
     }
 
-    public static double calc1(double n1, double n2, String symb) {
-        if (symb.equals("+")) {
+    public static double calc1(double n1, double n2, String symbol) {
+        if (symbol.equals("+")) {
             return n1 + n2;
         }
-        if (symb.equals("-")) {
+        if (symbol.equals("-")) {
             return n1 - n2;
         }
-        if (symb.equals("*")) {
+        if (symbol.equals("*")) {
             return n1 * n2;
         }
-        if (symb.equals("/")) {
+        if (symbol.equals("/")) {
             return n1 / n2;
         }
         else {
